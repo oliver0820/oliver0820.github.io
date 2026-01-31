@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Currículum Online - Oliver Adames Beato" />
+    <meta name="description" content="Oliver Adames - Desarrollador .NET | Proyecto Final: Agroconecta | Pasantía ITLA" />
     <meta name="author" content="Oliver Adames Beato" />
-    <title>Currículum | Oliver Adames Beato</title>
+    <meta name="keywords" content="Agroconecta, ITLA, proyecto final, desarrollador .NET, C#, ASP.NET Core, pasantía" />
+    <title>Oliver Adames Beato | Desarrollador .NET | Proyecto Agroconecta</title>
 
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,6 +15,34 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
 
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .project-card {
+            transition: transform 0.3s;
+            height: 100%;
+            border-left: 4px solid #198754;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .agroconecta-card {
+            border-left: 4px solid #0d6efd;
+            border-top: 3px solid #0d6efd;
+        }
+        .skill-badge {
+            margin: 2px;
+            font-size: 0.85rem;
+        }
+        .availability-badge {
+            font-size: 0.9rem;
+        }
+        .tech-stack {
+            font-size: 0.8rem;
+        }
+        .feature-list li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -23,7 +52,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Oliver Adames Beato</span>
         <span class="d-none d-lg-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Foto de perfil" />
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Oliver Adames - Desarrollador .NET" />
         </span>
     </a>
 
@@ -34,9 +63,10 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#agroconecta">Proyecto Final</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Otros Proyectos</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certificaciones</a></li>
         </ul>
     </div>
@@ -52,22 +82,204 @@
             Oliver <span class="text-primary">Adames Beato</span>
         </h1>
 
-        <div class="subheading mb-5">
-            Punta Cana, La Altagracia ·
-            <a href="mailto:oliveradames20@gmail.com">oliveradames20@gmail.com</a>
+        <div class="subheading mb-3">
+            <i class="fas fa-map-marker-alt text-primary"></i> Punta Cana, La Altagracia · 
+            <i class="fas fa-envelope text-primary ms-2"></i> 
+            <a href="mailto:oliveradames20@gmail.com" class="text-decoration-none">oliveradames20@gmail.com</a>
         </div>
 
-        <p class="lead mb-5">
-            Estudiante de término del Tecnólogo en Desarrollo de Software en el Instituto Tecnológico de las Américas (ITLA).
-            Poseo una sólida base en desarrollo backend con C# y .NET, desarrollo web con ASP.NET Core MVC y manejo de bases de datos relacionales.
-            He desarrollado múltiples proyectos académicos aplicando buenas prácticas, arquitectura en capas, control de versiones con Git
-            y metodologías ágiles. Actualmente busco una pasantía donde pueda aportar mis conocimientos técnicos y continuar mi crecimiento profesional.
+        <div class="mb-4">
+            <span class="badge bg-success availability-badge me-2">
+                <i class="fas fa-graduation-cap"></i> Proyecto Final: Agroconecta
+            </span>
+            <span class="badge bg-info availability-badge me-2">
+                <i class="fas fa-calendar-check"></i> Disponibilidad inmediata
+            </span>
+            <span class="badge bg-warning availability-badge">
+                <i class="fas fa-university"></i> ITLA - Última materia
+            </span>
+        </div>
+
+        <p class="lead mb-4">
+            Estudiante de término del <strong>Tecnólogo en Desarrollo de Software en ITLA</strong>, 
+            recién culminé mi proyecto final <strong>"Agroconecta"</strong> - una plataforma web completa 
+            para gestión agrícola desarrollada con <strong>ASP.NET Core MVC</strong> y <strong>SQL Server</strong>. 
+            Especializado en desarrollo backend con <strong>C#</strong> y <strong>.NET</strong>, 
+            con experiencia práctica en arquitecturas modernas, APIs REST y bases de datos relacionales. 
+            Busco una pasantía donde pueda aportar soluciones técnicas innovadoras mientras me desarrollo profesionalmente.
         </p>
 
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h5 class="mb-3"><i class="fas fa-rocket text-primary"></i> Disponibilidad:</h5>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span><strong>Inicio:</strong> Inmediato</li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span><strong>Modalidad:</strong> Flexible</li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span><strong>Proyecto Final:</strong> Agroconecta completado</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5 class="mb-3"><i class="fas fa-bullseye text-primary"></i> Enfoque Técnico:</h5>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-code text-primary"></i></span>Backend con .NET/C#</li>
+                    <li><span class="fa-li"><i class="fas fa-globe text-primary"></i></span>Aplicaciones Web ASP.NET Core</li>
+                    <li><span class="fa-li"><i class="fas fa-database text-primary"></i></span>Bases de Datos SQL</li>
+                    <li><span class="fa-li"><i class="fas fa-layer-group text-primary"></i></span>Arquitecturas Escalables</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="social-icons">
-            <a class="social-icon" href="https://www.linkedin.com/in/oliver-adames-beato-2ab409212/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-icon" href="https://github.com/oliver0820" target="_blank"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="https://www.youtube.com/channel/UC6-E4w7VWKgbgyopCvBoxgw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/in/oliver-adames-beato-2ab409212/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="social-icon" href="https://github.com/oliver0820" target="_blank" title="GitHub (Ver Agroconecta)">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="social-icon" href="https://www.youtube.com/channel/UC6-E4w7VWKgbgyopCvBoxgw" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a class="social-icon" href="mailto:oliveradames20@gmail.com" title="Contactar">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<hr class="m-0" />
+
+<!-- Agroconecta - PROYECTO FINAL DESTACADO -->
+<section class="resume-section" id="agroconecta">
+    <div class="resume-section-content">
+        <h2 class="mb-4">
+            <i class="fas fa-star text-warning me-2"></i>Proyecto Final: Agroconecta
+        </h2>
+        <p class="lead mb-5 text-muted">
+            Plataforma web completa para la gestión integral del sector agrícola - Proyecto de grado ITLA
+        </p>
+        
+        <div class="card agroconecta-card border-0 shadow-lg mb-5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="card-title text-primary mb-3">Agroconecta - Sistema de Gestión Agrícola</h3>
+                        <h6 class="card-subtitle mb-4 text-muted">ASP.NET Core MVC · SQL Server · Arquitectura ONION</h6>
+                        
+                        <p class="card-text mb-4">
+                            <strong>Agroconecta</strong> es una aplicación web empresarial desarrollada como proyecto final del ITLA, 
+                            diseñada para optimizar la gestión de fincas agrícolas mediante digitalización de procesos, 
+                            control de inventario, seguimiento de cultivos y análisis de productividad.
+                        </p>
+                        
+                        <h5 class="mb-3"><i class="fas fa-cogs text-primary"></i> Funcionalidades Principales:</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="fa-ul feature-list">
+                                    <li><span class="fa-li"><i class="fas fa-seedling text-success"></i></span>
+                                        <strong>Gestión de Cultivos:</strong> Registro y seguimiento por ciclo
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-tractor text-success"></i></span>
+                                        <strong>Control de Insumos:</strong> Inventario de semillas, fertilizantes
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-calendar-alt text-success"></i></span>
+                                        <strong>Planificación Agrícola:</strong> Calendario de siembra/cosecha
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-chart-line text-success"></i></span>
+                                        <strong>Dashboard Analítico:</strong> Métricas de productividad
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="fa-ul feature-list">
+                                    <li><span class="fa-li"><i class="fas fa-users text-success"></i></span>
+                                        <strong>Gestión de Personal:</strong> Asignación de tareas agrícolas
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-file-invoice-dollar text-success"></i></span>
+                                        <strong>Control Financiero:</strong> Costos, ingresos, ROI
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-mobile-alt text-success"></i></span>
+                                        <strong>Responsive Design:</strong> Acceso desde cualquier dispositivo
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-shield-alt text-success"></i></span>
+                                        <strong>Seguridad:</strong> Autenticación y roles (Admin, Agricultor, Supervisor)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card bg-light border-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-3">
+                                    <i class="fas fa-microchip text-primary"></i> Stack Tecnológico
+                                </h5>
+                                <div class="text-center mb-3">
+                                    <span class="badge bg-primary skill-badge">ASP.NET Core 8</span>
+                                    <span class="badge bg-primary skill-badge">C#</span>
+                                    <span class="badge bg-primary skill-badge">Entity Framework</span>
+                                    <span class="badge bg-primary skill-badge">SQL Server</span>
+                                    <span class="badge bg-primary skill-badge">HTML5/CSS3</span>
+                                    <span class="badge bg-primary skill-badge">JavaScript</span>
+                                    <span class="badge bg-primary skill-badge">Bootstrap 5</span>
+                                    <span class="badge bg-primary skill-badge">AJAX</span>
+                                    <span class="badge bg-primary skill-badge">LINQ</span>
+                                    <span class="badge bg-primary skill-badge">Git/GitHub</span>
+                                </div>
+                                
+                                <h5 class="card-title text-center mt-4 mb-3">
+                                    <i class="fas fa-architecture text-primary"></i> Arquitectura
+                                </h5>
+                                <p class="text-center small">
+                                    <strong>Patrón ONION</strong><br>
+                                    Separación por capas: Presentación → Aplicación → Dominio → Infraestructura
+                                </p>
+                                
+                                <div class="text-center mt-4">
+                                    <a href="https://github.com/oliver0820/agroconecta" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github"></i> Ver Código en GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h5 class="mb-3"><i class="fas fa-trophy text-warning"></i> Logros y Aprendizajes:</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <i class="fas fa-sitemap fa-2x text-primary mb-2"></i>
+                                    <h6>Arquitectura Escalable</h6>
+                                    <p class="small mb-0">Implementación exitosa de arquitectura ONION</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <i class="fas fa-database fa-2x text-primary mb-2"></i>
+                                    <h6>Modelado Complejo</h6>
+                                    <p class="small mb-0">15+ entidades relacionadas en SQL Server</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <i class="fas fa-users-cog fa-2x text-primary mb-2"></i>
+                                    <h6>Sistema Multi-rol</h6>
+                                    <p class="small mb-0">3 roles con permisos diferenciados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success mt-4">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    <strong>Demostración disponible:</strong> Puedo presentar una demo funcional de Agroconecta en entrevista, 
+                    mostrando el código fuente, diagramas de base de datos y explicando decisiones técnicas tomadas.
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -77,25 +289,65 @@
 <!-- Education -->
 <section class="resume-section" id="education">
     <div class="resume-section-content">
-        <h2 class="mb-5">Educación</h2>
+        <h2 class="mb-5">Formación Académica</h2>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
                 <h3 class="mb-0">Instituto Tecnológico de Las Américas (ITLA)</h3>
-                <div class="subheading mb-2">Tecnólogo en Desarrollo de Software (En término)</div>
-                <p><strong>Estado académico:</strong> Pendiente de una asignatura (Plan de Negocios).</p>
-
-                <p><strong>Asignaturas relevantes:</strong></p>
-                <ul>
-                    <li>Programación en C# y .NET</li>
-                    <li>ASP.NET Core MVC</li>
-                    <li>Base de Datos Avanzadas</li>
-                    <li>Diseño Centrado en el Usuario</li>
-                    <li>Metodologías Ágiles (SCRUM)</li>
-                </ul>
+                <div class="subheading mb-3">Tecnólogo en Desarrollo de Software</div>
+                
+                <div class="mb-4">
+                    <span class="badge bg-success">Estado: Graduación inminente</span>
+                    <span class="badge bg-info ms-2">Proyecto Final: Completado ✓</span>
+                    <span class="badge bg-warning ms-2">Última materia: Plan de Negocios</span>
+                </div>
+                
+                <p><strong>Logro destacado:</strong> Desarrollo y presentación exitosa de <strong>"Agroconecta"</strong> 
+                como proyecto final, aplicando todos los conocimientos adquiridos en el programa.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5>Conocimientos técnicos adquiridos:</h5>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Programación Orientada a Objetos con C#</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Desarrollo Web con ASP.NET Core MVC</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Diseño y Administración de Bases de Datos</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Arquitecturas de Software (ONION, en capas)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Habilidades complementarias:</h5>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Metodologías Ágiles (SCRUM)</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Control de Versiones con Git</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Documentación Técnica</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Presentación de Proyectos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="flex-shrink-0">
-                <span class="text-primary">2022 - Presente</span>
+                <span class="text-primary">Septiembre 2022 - Presente</span>
+                <div class="mt-2 text-center">
+                    <div class="progress" style="width: 150px; height: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%" 
+                             aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">95% Completado</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card border-0 bg-light">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-award text-warning me-2"></i>Proyecto Final Evaluado
+                </h5>
+                <p class="card-text">
+                    <strong>Agroconecta</strong> fue presentado y evaluado satisfactoriamente como proyecto de grado, 
+                    demostrando competencia en: análisis de requisitos, diseño de sistemas, desarrollo full-stack, 
+                    implementación de bases de datos, testing básico y documentación técnica.
+                </p>
             </div>
         </div>
     </div>
@@ -106,57 +358,142 @@
 <!-- Skills -->
 <section class="resume-section" id="skills">
     <div class="resume-section-content">
-        <h2 class="mb-5">Habilidades Técnicas</h2>
+        <h2 class="mb-5">Stack Tecnológico</h2>
 
-        <div class="subheading mb-3">Lenguajes & Tecnologías</div>
-        <ul class="list-inline dev-icons">
-            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-            <li class="list-inline-item"><i class="fab fa-dot-net"></i></li>
-            <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-            <li class="list-inline-item"><i class="fab fa-react"></i></li>
-            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-        </ul>
+        <div class="mb-5">
+            <h4 class="mb-3">Tecnologías aplicadas en Agroconecta:</h4>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="badge bg-primary p-2">
+                    <i class="fab fa-microsoft me-1"></i> ASP.NET Core 8
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fas fa-code me-1"></i> C# (.NET 8)
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fas fa-database me-1"></i> SQL Server
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fas fa-project-diagram me-1"></i> Entity Framework Core
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fab fa-html5 me-1"></i> HTML5 / Razor Pages
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fab fa-css3-alt me-1"></i> CSS3 / Bootstrap 5
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fab fa-js-square me-1"></i> JavaScript
+                </span>
+                <span class="badge bg-primary p-2">
+                    <i class="fab fa-git-alt me-1"></i> Git / GitHub
+                </span>
+            </div>
+        </div>
 
-        <ul class="fa-ul mb-0">
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>C# · .NET · ASP.NET Core MVC</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>SQL Server y Oracle</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Arquitectura en capas y ONION</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Git y GitHub (control de versiones)</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>CI/CD con GitHub Actions</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Docker, Docker Compose y Vagrant</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Metodologías Ágiles (SCRUM)</li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h4 class="mb-3"><i class="fas fa-server text-primary me-2"></i>Backend</h4>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>ASP.NET Core MVC:</strong> Desarrollo de aplicaciones web empresariales
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>C# Avanzado:</strong> LINQ, async/await, delegados, expresiones lambda
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>Entity Framework Core:</strong> ORM, migraciones, relaciones
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>APIs REST:</strong> Creación y consumo de servicios web
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>Autenticación/Autorización:</strong> Identity, roles, políticas
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <h4 class="mb-3"><i class="fas fa-tools text-primary me-2"></i>Herramientas & Metodologías</h4>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>Git & GitHub:</strong> Control de versiones, branching, pull requests
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>SQL Server Management:</strong> Diseño, optimización, queries complejos
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>Visual Studio / VS Code:</strong> Entornos de desarrollo
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>Metodologías Ágiles:</strong> SCRUM, sprints, historias de usuario
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>
+                        <strong>Docker (Básico):</strong> Contenedores para desarrollo
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h4 class="mb-3"><i class="fas fa-user-cog text-primary me-2"></i>Habilidades Blandas</h4>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary p-2">Resolución de Problemas</span>
+                <span class="badge bg-secondary p-2">Aprendizaje Continuo</span>
+                <span class="badge bg-secondary p-2">Trabajo en Equipo</span>
+                <span class="badge bg-secondary p-2">Comunicación Técnica</span>
+                <span class="badge bg-secondary p-2">Gestión del Tiempo</span>
+                <span class="badge bg-secondary p-2">Adaptabilidad</span>
+                <span class="badge bg-secondary p-2">Pensamiento Crítico</span>
+                <span class="badge bg-secondary p-2">Atención al Detalle</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <hr class="m-0" />
 
-<!-- Projects -->
+<!-- Otros Proyectos -->
 <section class="resume-section" id="projects">
     <div class="resume-section-content">
-        <h2 class="mb-5">Proyectos Académicos Destacados</h2>
-
-        <ul>
-            <li>
-                <strong>Sistema Gestor de Pacientes</strong> – Aplicación web desarrollada con ASP.NET Core MVC y .NET 8.
-                Incluye autenticación, roles, mantenimiento de pacientes, médicos, citas y resultados de laboratorio.
-                Implementación de arquitectura ONION y base de datos SQL Server.
-            </li>
-            <li>
-                <strong>Sistema de Control de Autobuses</strong> – Aplicación de escritorio en C# y Windows Forms para la gestión
-                y control de rutas y unidades.
-            </li>
-            <li>
-                <strong>Sistema de Registro de Visitas (ITLA)</strong> – Sistema para el control de accesos, registro de visitantes
-                y generación de reportes.
-            </li>
-            <li>
-                <strong>Automatización con Docker y Vagrant</strong> – Implementación de servidores web Apache y Nginx con máquinas virtuales
-                y balanceo de carga.
-            </li>
-        </ul>
+        <h2 class="mb-5">Otros Proyectos Académicos</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de Control de Autobuses</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">C# · Windows Forms · SQL Server</h6>
+                        <p class="card-text">Aplicación de escritorio para gestión de flota vehicular con control de rutas, mantenimiento y reportes.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark border">Windows Forms</span>
+                            <span class="badge bg-light text-dark border">SQL Server</span>
+                            <span class="badge bg-light text-dark border">Crystal Reports</span>
+                        </div>
+                        <a href="https://github.com/oliver0820/control-autobuses" class="btn btn-sm btn-outline-primary" target="_blank">
+                            <i class="fab fa-github"></i> Ver código
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de Registro de Visitas ITLA</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">ASP.NET Core · SQL Server</h6>
+                        <p class="card-text">Sistema para control de acceso al campus con registro digital de visitantes y generación de QR.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark border">ASP.NET Core</span>
+                            <span class="badge bg-light text-dark border">QR Generation</span>
+                            <span class="badge bg-light text-dark border">Identity</span>
+                        </div>
+                        <a href="https://github.com/oliver0820/visitas-itla" class="btn btn-sm btn-outline-primary" target="_blank">
+                            <i class="fab fa-github"></i> Ver código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -165,12 +502,57 @@
 <!-- Certifications -->
 <section class="resume-section" id="certifications">
     <div class="resume-section-content">
-        <h2 class="mb-5">Certificaciones & Reconocimientos</h2>
-
-        <ul class="fa-ul mb-0">
-            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>Certificación en SQL Server y Oracle</li>
-            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>Reconocimiento a Proyecto Académico – ITLA</li>
-        </ul>
+        <h2 class="mb-5">Certificaciones & Logros</h2>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="fas fa-certificate text-warning me-2"></i>Certificaciones ITLA
+                        </h5>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-database text-primary"></i></span>
+                                <strong>SQL Server Fundamentals</strong><br>
+                                <small class="text-muted">Diseño y administración de bases de datos</small>
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-code text-primary"></i></span>
+                                <strong>C# y .NET Core</strong><br>
+                                <small class="text-muted">Programación orientada a objetos y desarrollo web</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="fas fa-trophy text-warning me-2"></i>Logros Recientes
+                        </h5>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-medal text-primary"></i></span>
+                                <strong>Proyecto Final Completado</strong><br>
+                                <small class="text-muted">Agroconecta - Sistema de gestión agrícola</small>
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-graduation-cap text-primary"></i></span>
+                                <strong>Graduación Inminente</strong><br>
+                                <small class="text-muted">ITLA - Desarrollo de Software</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mt-4">
+            <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Disponibilidad para entrevista</h5>
+            <p class="mb-0">
+                Puedo presentar una <strong>demo completa de Agroconecta</strong> en entrevista, explicar decisiones técnicas, 
+                mostrar el código fuente y discutir cómo mis habilidades pueden beneficiar a su equipo de desarrollo.
+            </p>
+        </div>
     </div>
 </section>
 
@@ -178,5 +560,23 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('.js-scroll-trigger').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
